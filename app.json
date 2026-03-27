@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "AryabhattaAntiBullyingApp",
+    "name": "Zero Tolerance",
     "slug": "AryabhattaAntiBullyingApp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -12,16 +12,30 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hkhday.AryabhattaAntiBullyingApp",
+      "googleServicesFile": "./firebaseconfig/GoogleService-Info.plist",
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hkhday.AryabhattaAntiBullyingApp",
+      "googleServicesFile": "./firebaseconfig/google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "63925219-7d7d-471b-a346-afc0ad51c265"
+      }
     }
   }
 }

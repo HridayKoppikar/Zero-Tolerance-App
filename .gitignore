@@ -33,3 +33,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Prebuild
+android/
+ios/
+
+firebaseconfig/
+.git/
